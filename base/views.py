@@ -11,5 +11,5 @@ def products(request):
     print(request)
     tempAr=[]
     for prod in Product.objects.all():
-        tempAr.append({"description":prod.description,"price":prod.price,"id":stu.id})
+        tempAr.append({"description":prod.description,"price":prod.price})
     return HttpResponse(tempAr)
